@@ -123,7 +123,6 @@
   title: Package-URL (PURL) specification
   date: 2025-12-06
   shortname: ECMA-xxx
-  date: 2025-12-06
   status: standard
   location: https://tc54.org/ecmaXXX/
   markEffects: true
@@ -221,7 +220,7 @@
 
 <emu-clause id="sec-purl-specification">
   <h1>Package-URL specification</h1>
-  <p>PURL stands for <strong>Package URL</strong>.</p>
+  <p>PURL stands for <strong>Package-URL</strong>.</p>
   <p>A PURL is a URL composed of seven components:</p>
   <pre>
     <code lang="plaintext">
@@ -244,7 +243,7 @@
       <tr>
         <td>scheme</td>
         <td>Required</td>
-        <td>The URL scheme with the constant value of "pkg". One of the primary reasons for this single scheme is to facilitate the future official registration of the "pkg" scheme for package URLs.</td>
+        <td>The URL scheme with the constant value of "pkg". One of the primary reasons for this single scheme is to facilitate the future official registration of the "pkg" scheme for Package-URLs.</td>
       </tr>
       <tr>
         <td>type</td>
@@ -624,7 +623,7 @@
           <td>use_repository</td>
           <td>Boolean</td>
           <td>Required</td>
-          <td>true if this PURL type uses a public package repository.</td>
+          <td>`true` if this PURL type uses a public package repository.</td>
         </tr>
         <tr>
           <td>default_repository_url</td>
@@ -646,7 +645,7 @@
       <p class="properties"><strong>Location:</strong> /repository/use_repository<br>
         <strong>Property:</strong> use_repository (Required)<br>
         <strong>Type:</strong> Boolean</p>
-      <p>true if this PURL type uses a public package repository.</p>
+      <p>`true` if this PURL type uses a public package repository.</p>
     </emu-clause>
 
     <emu-clause id="sec--repository-default-repository-url">
@@ -701,7 +700,7 @@
           <td>case_sensitive</td>
           <td>Boolean</td>
           <td>Optional</td>
-          <td>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</td>
+          <td>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</td>
         </tr>
         <tr>
           <td>normalization_rules</td>
@@ -773,8 +772,8 @@
       <p class="properties"><strong>Location:</strong> /namespace_definition/case_sensitive<br>
         <strong>Property:</strong> case_sensitive (Optional)<br>
         <strong>Type:</strong> Boolean<br>
-        <strong>Default Value:</strong> true</p>
-      <p>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</p>
+        <strong>Default Value:</strong> `true`</p>
+      <p>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</p>
     </emu-clause>
 
     <emu-clause id="sec--namespace-definition-normalization-rules">
@@ -837,7 +836,7 @@
           <td>case_sensitive</td>
           <td>Boolean</td>
           <td>Optional</td>
-          <td>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</td>
+          <td>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</td>
         </tr>
         <tr>
           <td>normalization_rules</td>
@@ -893,8 +892,8 @@
       <p class="properties"><strong>Location:</strong> /name_definition/case_sensitive<br>
         <strong>Property:</strong> case_sensitive (Optional)<br>
         <strong>Type:</strong> Boolean<br>
-        <strong>Default Value:</strong> true</p>
-      <p>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</p>
+        <strong>Default Value:</strong> `true`</p>
+      <p>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</p>
     </emu-clause>
 
     <emu-clause id="sec--name-definition-normalization-rules">
@@ -957,7 +956,7 @@
           <td>case_sensitive</td>
           <td>Boolean</td>
           <td>Optional</td>
-          <td>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</td>
+          <td>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</td>
         </tr>
         <tr>
           <td>normalization_rules</td>
@@ -1013,8 +1012,8 @@
       <p class="properties"><strong>Location:</strong> /version_definition/case_sensitive<br>
         <strong>Property:</strong> case_sensitive (Optional)<br>
         <strong>Type:</strong> Boolean<br>
-        <strong>Default Value:</strong> true</p>
-      <p>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</p>
+        <strong>Default Value:</strong> `true`</p>
+      <p>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</p>
     </emu-clause>
 
     <emu-clause id="sec--version-definition-normalization-rules">
@@ -1191,7 +1190,7 @@
           <td>case_sensitive</td>
           <td>Boolean</td>
           <td>Optional</td>
-          <td>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</td>
+          <td>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</td>
         </tr>
         <tr>
           <td>normalization_rules</td>
@@ -1247,8 +1246,8 @@
       <p class="properties"><strong>Location:</strong> /subpath_definition/case_sensitive<br>
         <strong>Property:</strong> case_sensitive (Optional)<br>
         <strong>Type:</strong> Boolean<br>
-        <strong>Default Value:</strong> true</p>
-      <p>true if this PURL component is case sensitive. If false, the canonical form must be lowercased.</p>
+        <strong>Default Value:</strong> `true`</p>
+      <p>`true` if this PURL component is case sensitive. If `false`, the canonical form must be lowercased.</p>
     </emu-clause>
 
     <emu-clause id="sec--subpath-definition-normalization-rules">

@@ -332,10 +332,10 @@
     <h1>Permitted characters</h1>
     <p>A canonical PURL is composed of these permitted ASCII characters:</p>
     <ul>
-      <li>The Alphanumeric Characters: `A to Z`, `a to z`, `0 to 9`,</li>
-      <li>The Punctuation Characters: `.-_~` (period '.', dash '-', underscore '_' and tilde '~'),</li>
-      <li>The Percent Character: `%` (percent sign '%'), and</li>
-      <li>The Separator Characters `:/@?=&amp;#` (colon ':', slash '/', at sign '@', question mark '?', equal sign '=', ampersand '&amp;' and hash sign '#').</li>
+      <li>The Alphanumeric Characters: `A to Z`, `a to z`, `0 to 9`</li>
+      <li>The Punctuation Characters: `.-_~` (period '.', dash '-', underscore '_' and tilde '~')</li>
+      <li>The Percent Character: `%` (percent sign '%')</li>
+      <li>The Separator Characters `:/@?=&amp;#` (colon ':', slash '/', at sign '@', question mark '?', equal sign '=', ampersand '&amp;' and hash sign '#')</li>
     </ul>
   </emu-clause>
   <emu-clause id="sec-purl-specification-separator-characters">
@@ -367,9 +367,9 @@
         <ul>
           <li>the Alphanumeric Characters,</li>
           <li>the Punctuation Characters,</li>
-          <li>the Separator Characters when being used as PURL separators,</li>
-          <li>the colon ':', whether used as a Separator Character or otherwise, and</li>
-          <li>the percent sign '%' when used to represent a percent-encoded character.</li>
+          <li>the Separator Characters when being used as PURL separators</li>
+          <li>the colon ':', whether used as a Separator Character or otherwise</li>
+          <li>the percent sign '%' when used to represent a percent-encoded character</li>
         </ul>
       </li>
       <li>Where the space ' ' is permitted, it must be percent-encoded as '%20'.</li>
@@ -466,11 +466,11 @@
     <emu-clause id="sec-purl-specification-rules-subpath">
       <h1>Subpath</h1>
       <ul>
-        <li>The `subpath` string is prefixed by a '#' separator when not empty</li>
-        <li>The '#' is not part of the `subpath`</li>
-        <li>The `subpath` contains zero or more segments, separated by slash '/'</li>
-        <li>Leading and trailing slashes '/' are not significant and should be stripped in the canonical form</li>
-        <li>Each `subpath` segment must be a percent-encoded string</li>
+        <li>The `subpath` string is prefixed by a '#' separator when not empty.</li>
+        <li>The '#' is not part of the `subpath`.</li>
+        <li>The `subpath` contains zero or more segments, separated by slash '/'.</li>
+        <li>Leading and trailing slashes '/' are not significant and should be stripped in the canonical form.</li>
+        <li>Each `subpath` segment must be a percent-encoded string.</li>
         <li>When percent-decoded, a segment:
           <ul>
             <li>Must not contain any slash '/' characters</li>
@@ -479,7 +479,7 @@
             <li>May contain any Unicode character other than '/' unless the package's `type` definition provides otherwise.</li>
           </ul>
         </li>
-        <li>The `subpath` must be interpreted as relative to the root of the package</li>
+        <li>The `subpath` must be interpreted as relative to the root of the package.</li>
       </ul>
     </emu-clause>
   </emu-clause>

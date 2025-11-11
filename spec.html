@@ -171,7 +171,7 @@
   </ul>
   <p>As software supply chain security becomes a global priority, formalizing PURL as an international standard ensures its adoption and consistent implementation. Standardization under Ecma International Technical Committee 54 (TC54) positions PURL as a foundational building block for secure, transparent, and efficient software ecosystems worldwide.</p>
   <p>By enabling a universally recognized and implementable specification, PURL aligns with global efforts to improve the security, reliability, and accountability of software supply chains. Its adoption ensures that organizations and developers can rely on a common language to manage software packages across the diverse and rapidly evolving software landscape.</p>
-  <p class="adoption-info">This Ecma Standard was developed by Technical Committee 54 and was adopted by the General Assembly of December 2025.</p>
+  <p class="adoption-info">This document specifies version 1.0 of the Package-URL standard, developed under the auspices of Ecma International Technical Committee 54, Task Group 2 (TC54-TG2).</p>
 </emu-intro>
 
 <emu-clause id="sec-scope">
@@ -310,7 +310,11 @@
           <li>PURL `qualifiers`: this maps to a URL `query`</li>
           <li>PURL `subpath`: this is a URL `fragment`</li>
         </ul>
+<<<<<<< Updated upstream
       </li>In a PURL, there is no support for a URL Authority (e.g. no `username`, `password`, `host` and `port` components).</li>
+=======
+      <li>In a PURL, there is no support for a URL Authority (e.g. no `username`, `password`, `host` and `port` components).</li>  
+>>>>>>> Stashed changes
       <li>Special URL schemes as defined in https://url.spec.whatwg.org/ such as `file://`, `https://`, `http://` and `ftp://` are not valid PURL types. They are valid URL or URI schemes but they are not a valid PURL scheme. They may be used to reference URLs in separate attributes outside of a PURL or in a PURL qualifier.</li>
       <li>Version control system (VCS) URLs such `git://`, `svn://`, `hg://` or as defined in Python pip or SPDX download locations are not valid PURL types. They are valid URL or URI schemes but they are not a valid PURL scheme. They are a closely related, compact and uniform way to reference VCS URLs. They may be used as references in separate attributes outside of a PURL or in a PURL qualifier.</li>
     </ul>

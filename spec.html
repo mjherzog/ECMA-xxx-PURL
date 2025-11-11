@@ -353,8 +353,8 @@
       </li>
       <li>The following characters shall not be percent-encoded:
         <ul>
-          <li>the Alphanumeric Characters,</li>
-          <li>the Punctuation Characters,</li>
+          <li>the Alphanumeric Characters</li>
+          <li>the Punctuation Characters</li>
           <li>the Separator Characters when being used as PURL separators</li>
           <li>the colon ':', whether used as a Separator Character or otherwise</li>
           <li>the percent sign '%' when used to represent a percent-encoded character</li>
@@ -375,8 +375,8 @@
     <h1>Rules for each PURL component</h1>
     <p>A PURL string is an ASCII URL string composed of seven components. Except as expressly stated otherwise in this Clause, each component:</p>
     <ul>
-      <li>May be composed of any of the characters defined in the <emu-xref href="#sec-purl-specification-permitted-characters" title></emu-xref> clause</li>
-      <li>Shall be encoded as defined in the <emu-xref href="#sec-purl-specification-character-encoding" title></emu-xref> clause</li>
+      <li>may be composed of any of the characters defined in the <emu-xref href="#sec-purl-specification-permitted-characters" title></emu-xref> clause</li>
+      <li>shall be encoded as defined in the <emu-xref href="#sec-purl-specification-character-encoding" title></emu-xref> clause</li>
     </ul>
     <p>The "lowercase" rules are defined in the <emu-xref href="#sec-purl-specification-case-folding" title></emu-xref> clause.</p>
     <p>The rules for each component are:</p>
@@ -406,9 +406,9 @@
         <li>Each `namespace` segment shall be a percent-encoded string.</li>
         <li>When percent-decoded, a segment:
           <ul>
-            <li>Shall not contain any slash '/' characters</li>
-            <li>Shall not be empty</li>
-            <li>May contain any Unicode character other than '/' unless the package's `type` definition provides otherwise.</li>
+            <li>shall not contain any slash '/' characters</li>
+            <li>shall not be empty</li>
+            <li>may contain any Unicode character other than '/' unless the package's `type` definition provides otherwise</li>
           </ul>
         </li>
         <li>A URL host or Authority shall not be used as a `namespace`. Use instead a `repository_url` qualifier. Note however, that for some types, the `namespace` may look like a host.</li>
@@ -461,10 +461,10 @@
         <li>Each `subpath` segment shall be a percent-encoded string.</li>
         <li>When percent-decoded, a segment:
           <ul>
-            <li>Shall not contain any slash '/' characters</li>
-            <li>Shall not be empty</li>
-            <li>Shall not be any of '..' or '.'</li>
-            <li>May contain any Unicode character other than '/' unless the package's `type` definition provides otherwise.</li>
+            <li>shall not contain any slash '/' characters</li>
+            <li>shall not be empty</li>
+            <li>shall not be any of '..' or '.'</li>
+            <li>may contain any Unicode character other than '/' unless the package's `type` definition provides otherwise</li>
           </ul>
         </li>
         <li>The `subpath` shall be interpreted as relative to the root of the package.</li>
